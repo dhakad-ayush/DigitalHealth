@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | Swasthya Sahayak</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: #f0f2f5;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Your standard navbar code -->
+    </nav>
+
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="text-center mb-4">
+                    <h1 class="display-5">Book an Appointment</h1>
+                    <p class="lead text-muted">Follow the steps below to schedule your consultation.</p>
+                </div>
+
+                <div class="card shadow-sm">
+                    <div class="card-body p-4">
+                        <form id="bookingForm">
+                            <!-- Step 1: Choose Specialty -->
+                            <div class="mb-4">
+                                <h5><span class="badge bg-primary rounded-circle step-badge me-2">1</span> Choose a Specialty</h5>
+                                <select class="form-select" id="specialtySelect" aria-label="Select Specialty">
+                                    <option value="">Select a medical specialty...</option>
+                                    <option value="gp">General Physician</option>
+                                    <option value="cardio">Cardiologist</option>
+                                    <option value="derma">Dermatologist</option>
+                                </select>
+                            </div>
+
+                            <!-- Step 2: Select a Doctor (Dynamically populated) -->
+                            <div class="mb-4">
+                                <h5><span class="badge bg-primary rounded-circle step-badge me-2">2</span> Select a Doctor</h5>
+                                <div id="doctorSelectionArea">
+                                    <p class="text-muted">Please select a specialty to see available doctors.</p>
+                                </div>
+                            </div>
+
+                            <!-- Step 3: Pick Date and Time -->
+                            <div class="mb-4">
+                                <h5><span class="badge bg-primary rounded-circle step-badge me-2">3</span> Pick a Date & Time</h5>
+                                <input type="date" class="form-control mb-3" id="appointmentDate" value="2025-09-20">
+                                <div class="row" id="timeSlotsContainer">
+                                    <div class="col-md-3 col-6"><div class="timeslot text-center">10:00 AM</div></div>
+                                    <div class="col-md-3 col-6"><div class="timeslot text-center">10:30 AM</div></div>
+                                    <div class="col-md-3 col-6"><div class="timeslot text-center">11:00 AM</div></div>
+                                    <div class="col-md-3 col-6"><div class="timeslot text-center">11:30 AM</div></div>
+                                    <div class="col-md-3 col-6"><div class="timeslot text-center">02:00 PM</div></div>
+                                    <div class="col-md-3 col-6"><div class="timeslot text-center">02:30 PM</div></div>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-success w-100 py-2 fs-5">Confirm Appointment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Link the new script -->
+    <script src="js/booking.js"></script>
+</body>
+</html>

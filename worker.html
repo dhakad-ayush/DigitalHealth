@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard | Swasthya Sahayak</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: #f0f2f5;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        </nav>
+
+    <main class="container py-4">
+        <div class="dashboard-header d-flex justify-content-between align-items-center">
+            <div>
+                <h1 class="mb-0">Welcome, Ramesh!</h1>
+                <p class="lead mb-0 opacity-75">Here's your health summary at a glance.</p>
+            </div>
+            <a href="appointment.html" class="btn btn-light"><i class="fas fa-calendar-plus me-2"></i>Book Appointment</a>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card profile-card text-center mb-4">
+                    <div class="card-body">
+                        <img src="assets/img/profile.png" alt="Profile Picture" class="profile-pic-dash mb-2">
+                        <h5 class="card-title">Ramesh Kumar</h5>
+                        <p class="text-muted mb-2">WKR12345</p>
+                        <hr>
+                        <h6 class="mb-3">My Health Card</h6>
+                        <canvas id="qrCodeCanvas" class="img-fluid"></canvas>
+                        <p class="mt-3 text-muted small">Scan for emergency access.</p>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-success text-white d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">Upcoming Appointments</h5>
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="card-body">
+                        <div class="appointment-item">
+                            <h6 class="mb-1">General Checkup</h6>
+                            <p class="text-muted mb-0">with Dr. Priya Sharma</p>
+                            <small class="fw-bold">25-Sep-2025 at 10:00 AM</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="row">
+                    </div>
+
+                <div class="card shadow-sm dashboard-tabs">
+                    <div class="card-header bg-white border-0">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#prescriptions">Prescriptions</a></li>
+                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#reports">Lab Reports</a></li>
+                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#vaccinations">Vaccinations</a></li>
+                        </ul>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="prescriptions">
+                                <div class="record-item d-flex justify-content-between align-items-center">
+                                    <div><h6 class="mb-1">Viral Fever</h6><small class="text-muted">Dr. Priya Sharma - 15-Sep-2025</small></div>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                                </div>
+                                <div class="record-item d-flex justify-content-between align-items-center">
+                                    <div><h6 class="mb-1">Seasonal Allergy</h6><small class="text-muted">Dr. Amit Singh - 22-Jul-2025</small></div>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                                </div>
+                                 <div class="record-item d-flex justify-content-between align-items-center">
+                                    <div><h6 class="mb-1">Minor Injury Dressing</h6><small class="text-muted">Dr. Priya Sharma - 14-Jun-2025</small></div>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">View Details</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="reports">
+                                <div class="record-item d-flex justify-content-between align-items-center">
+                                    <div><h6 class="mb-1">Complete Blood Count (CBC)</h6><small class="text-muted">City Lab - 15-Sep-2025</small></div>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Download PDF</a>
+                                </div>
+                                <div class="record-item d-flex justify-content-between align-items-center">
+                                    <div><h6 class="mb-1">Chest X-Ray</h6><small class="text-muted">Apollo Imaging - 05-Jun-2025</small></div>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Download PDF</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="vaccinations">
+                                <p class="text-center text-muted p-4">No vaccination records found.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+    <script src="js/qr.js"></script>
+</body>
+</html>

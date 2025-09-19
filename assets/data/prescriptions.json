@@ -1,0 +1,33 @@
+[
+  {
+    "prescriptionId": "PRES001",
+    "workerId": "WKR12345",
+    "doctorId": "DOC54321",
+    "date": "2025-08-15",
+    "diagnosis": "General Checkup, Viral Fever",
+    "medications": [
+      { "name": "Paracetamol 500mg", "dosage": "1 tablet, 3 times a day" },
+      { "name": "Vitamin C 500mg", "dosage": "1 tablet, once a day" }
+    ]
+  },
+  {
+    "prescriptionId": "PRES002",
+    "workerId": "WKR67890",
+    "doctorId": "DOC98765",
+    "date": "2025-08-11",
+    "diagnosis": "High Blood Pressure",
+    "medications": [
+      { "name": "Amlodipine 5mg", "dosage": "1 tablet, once a day in the morning" }
+    ]
+  },
+  {
+    "prescriptionId": "PRES003",
+    "workerId": "WKR12345",
+    "doctorId": "DOC54321",
+    "date": "2025-07-22",
+    "diagnosis": "Seasonal Flu",
+    "medications": [
+        { "name": "Oseltamivir 75mg", "dosage": "1 capsule, twice a day for 5 days" }
+    ]
+  }
+]

@@ -1,0 +1,201 @@
+{
+  "welcome_message": "Digital Health Records for Migrant Workers",
+  "tagline": "A unified platform ensuring timely and effective healthcare for every worker.",
+  "get_started_button": "Get Started",
+  "login_button": "Login / Register"
+}
+
+{
+    "nav_home": "Home",
+    "nav_features": "Features",
+    "choose_role": "Choose Your Role",
+    "select_role_tagline": "Please select how you would like to log in to the system.",
+    "role_worker": "Migrant Worker",
+    "worker_description": "Access your personal health records, view prescriptions, and manage your health card.",
+    "worker_login_button": "Worker Login",
+    "role_doctor": "Doctor / Healthcare",
+    "doctor_description": "Access patient records, upload reports, and provide digital prescriptions.",
+    "doctor_login_button": "Doctor Login",
+    "role_admin": "Government / Admin",
+    "admin_description": "View health analytics, monitor trends, and manage the portal.",
+    "admin_login_button": "Admin Login"
+}
+
+{
+    "back_to_selection": "Back to Role Selection",
+    "worker_login_header": "Worker Login",
+    "worker_id_label": "Phone Number / Worker ID",
+    "worker_id_placeholder": "Enter your phone or ID",
+    "password_label": "Password",
+    "password_placeholder": "Enter your password",
+    "remember_me": "Remember Me",
+    "forgot_password": "Forgot Password?",
+    "login_button_text": "Login",
+    "no_account": "Don't have an account?",
+    "register_here": "Register Here"
+}
+{
+    "doctor_login_header": "Doctor Login",
+    "doctor_credential_label": "License Number / Email",
+    "doctor_credential_placeholder": "Enter your license number or email"
+}
+
+{
+    "admin_login_header": "Admin Login",
+    "admin_username_label": "Admin Username",
+    "admin_username_placeholder": "Enter your username"
+}
+{
+    "create_account_header": "Create Your Account",
+    "i_am_a": "I am a:",
+    "doctor_provider": "Doctor / Healthcare Provider",
+    "full_name_label": "Full Name",
+    "phone_number_label": "Phone Number",
+    "dob_label": "Date of Birth",
+    "home_state_label": "Home State",
+    "license_label": "Medical License Number",
+    "specialization_label": "Specialization",
+    "confirm_password_label": "Confirm Password",
+    "agree_to": "I agree to the",
+    "terms_and_conditions": "Terms and Conditions",
+    "register_button": "Register",
+    "already_have_account": "Already have an account?",
+    "login_here": "Login Here"
+}
+
+{
+    "my_dashboard": "My Dashboard",
+    "my_profile": "My Profile",
+    "logout": "Logout",
+    "worker_id_prefix": "Worker ID:",
+    "my_health_card": "My Health Card",
+    "scan_qr_instruction": "Scan this code for quick access to your health records in emergencies.",
+    "download_card": "Download Card",
+    "welcome_back": "Welcome back,",
+    "blood_group": "Blood Group",
+    "last_checkup": "Last Checkup",
+    "prescriptions": "Prescriptions",
+    "lab_reports": "Lab Reports",
+    "view_button": "View",
+    "prescription_1_title": "Dr. Priya Sharma - General Checkup",
+    "prescription_2_title": "Dr. Anbu Rajan - Fever",
+    "no_lab_reports": "No lab reports found."
+}
+
+{
+    "doctor_portal": "Doctor Portal",
+    "welcome_doctor": "Welcome,",
+    "add_new_patient": "Add New Patient",
+    "find_a_patient": "Find a Patient",
+    "search_placeholder": "Enter Worker ID, Name, or Phone Number...",
+    "search_button": "Search",
+    "scan_qr_button": "Scan QR",
+    "recent_patients": "Recent Patients",
+    "table_header_name": "Name",
+    "table_header_worker_id": "Worker ID",
+    "table_header_last_visit": "Last Visit",
+    "table_header_action": "Action",
+    "view_record_button": "View Record"
+}
+{
+    "admin_panel": "Admin Panel",
+    "dashboard_overview": "Dashboard Overview",
+    "total_workers": "Total Workers",
+    "doctors_onboard": "Doctors Onboard",
+    "monthly_health_cases": "Monthly Health Cases Trend",
+    "worker_distribution": "Worker Distribution by State"
+}
+{
+    "change_photo": "Change Photo",
+    "edit_profile_details": "Edit Profile Details",
+    "change_password": "Change Password",
+    "new_password": "New Password",
+    "new_password_placeholder": "Enter new password",
+    "confirm_password_placeholder": "Confirm new password",
+    "save_changes": "Save Changes"
+}
+{
+    "nav_about": "About Us",
+    "nav_login": "Login",
+    "about_header": "About Swasthya Sahayak",
+    "about_tagline": "Empowering Migrant Workers with Accessible Healthcare.",
+    "challenge_title": "The Challenge",
+    "challenge_text": "Migrant workers are the backbone of our economy, yet they often face significant barriers to healthcare. Scattered across different states, they struggle with language barriers, lack of consistent medical history, and difficulty accessing timely treatment. This fragmentation of health information leads to delayed care, misdiagnosis, and increased vulnerability to health risks.",
+    "mission_title": "Our Mission",
+    "mission_text": "Our mission is to bridge this gap by creating a unified digital health ecosystem. Swasthya Sahayak provides a secure, multilingual platform where workers can maintain their health records, doctors can access vital history with a simple QR scan, and government agencies can monitor public health trends. We aim to make healthcare seamless, accessible, and equitable for every migrant worker in India.",
+    "sdg_title": "Alignment with Sustainable Development Goals",
+    "sdg3_name": "SDG 3: Good Health & Well-being",
+    "sdg3_text": "By providing a robust digital health record system, we ensure better diagnosis, treatment, and overall health management, directly contributing to a healthier workforce.",
+    "sdg8_name": "SDG 8: Decent Work & Economic Growth",
+    "sdg8_text": "A healthy worker is a productive worker. Our platform helps reduce absenteeism due to illness, fostering a more stable and efficient workforce that drives economic growth.",
+    "sdg10_name": "SDG 10: Reduced Inequalities",
+    "sdg10_text": "We reduce healthcare inequalities by giving a vulnerable and mobile population the same access to consistent, quality healthcare that is available to others.",
+    "footer_text": "© 2025 Swasthya Sahayak. All Rights Reserved."
+}
+{
+    "nav_contact": "Contact",
+    "contact_header": "Get In Touch",
+    "contact_tagline": "We'd love to hear from you. Please fill out the form below or reach out to our team.",
+    "email_label": "Email Address",
+    "subject_label": "Subject",
+    "message_label": "Message",
+    "send_message_button": "Send Message",
+    "contact_info_title": "Contact Information",
+    "team_header": "Meet the Team",
+    "team_tagline": "The dedicated individuals behind this project.",
+    "team_member1_role": "Project Lead",
+    "team_member2_role": "Frontend Developer",
+    "team_member3_role": "UI/UX Designer"
+}
+{
+    "features_header": "Our Core Features",
+    "features_tagline": "A suite of tools designed to provide seamless healthcare for everyone.",
+    "feature1_title": "Digital Health Records",
+    "feature1_desc": "Securely store and access your entire medical history, from prescriptions to lab reports, all in one place.",
+    "feature2_title": "QR Code Health Card",
+    "feature2_desc": "A unique, scannable QR code provides doctors with instant access to your vital health data in emergencies.",
+    "feature3_title": "Multilingual Support",
+    "feature3_desc": "Our platform is available in multiple languages, including Hindi, Bengali, and Malayalam, to break down communication barriers.",
+    "feature4_title": "Role-Based Dashboards",
+    "feature4_desc": "Custom-tailored portals for Workers, Doctors, and Admins to ensure each user has the tools they need.",
+    "feature5_title": "Health Analytics",
+    "feature5_desc": "The admin dashboard provides valuable insights into public health trends for better policy-making.",
+    "feature6_title": "Secure Access",
+    "feature6_desc": "Your health data is protected with a secure login system and role-based access controls.",
+    "roadmap_header": "Future Roadmap",
+    "roadmap_tagline": "We are constantly innovating to improve healthcare access.",
+    "roadmap1": "Telemedicine Integration",
+    "roadmap2": "AI-Powered Health Insights & Reminders",
+    "roadmap3": "Offline Access & Data Sync",
+    "roadmap4": "Wearable Device Integration"
+}
+{
+    "nav_faq": "FAQ",
+    "faq_header": "Frequently Asked Questions",
+    "faq_tagline": "Find answers to the most common questions about Swasthya Sahayak.",
+    "faq1_q": "What is Swasthya Sahayak?",
+    "faq1_a": "Swasthya Sahayak is a digital platform designed to manage the health records of migrant workers in India. It provides a centralized system for workers to store their medical history, for doctors to access this information easily via a QR code, and for government agencies to monitor public health data.",
+    "faq2_q": "Is my health data safe and secure?",
+    "faq2_a": "Yes. Data security is our top priority. All data is stored securely, and access to your health records is permission-based. Only registered and verified doctors can view your information, and only after you present your unique QR code.",
+    "faq3_q": "How do I get my QR Code Health Card?",
+    "faq3_a": "Upon successful registration as a worker, your unique QR Code Health Card is automatically generated. You can find it in your dashboard after logging in. You can show it directly from your phone or download and print it for physical use.",
+    "faq4_q": "Is this service available in my native language?",
+    "faq4_a": "Yes, our platform supports multiple languages including English, Hindi, Malayalam, Bengali, and Odia to ensure that language is not a barrier to accessing healthcare."
+}
+{
+    "notifications": "Notifications",
+    "quick_actions": "Quick Actions",
+    "book_appointment": "Book Appointment",
+    "upload_document": "Upload Document",
+    "emergency_sos": "Emergency SOS",
+    "upcoming_appointment": "Upcoming Appointment",
+    "no_upcoming_appointments": "No upcoming appointments.",
+    "vaccinations": "Vaccinations",
+    "view_full_history": "View Full History"
+}
+
+{
+    "my_appointments": "My Appointments",
+    "view_schedule": "View Full Schedule",
+    "search_patients": "Search Patients..."
+}

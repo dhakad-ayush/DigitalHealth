@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features | Swasthya Sahayak</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: #f8f9fa;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">⛑️ Swasthya Sahayak</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html" data-lang="nav_home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="features.html" data-lang="nav_features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html" data-lang="nav_about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" data-lang="nav_contact">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe"></i> Language
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('hi')">हिंदी (Hindi)</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('bn')">বাংলা (Bengali)</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('ml')">മലയാളം (Malayalam)</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('or')">ଓଡିଆ (Odia)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-lg-3 px-3" href="login.html" data-lang="nav_login">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="display-4" data-lang="features_header">Our Core Features</h1>
+            <p class="lead" data-lang="features_tagline">A suite of tools designed to provide seamless healthcare for everyone.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 text-center p-3">
+                    <div class="feature-icon bg-primary text-white mx-auto mb-3"><i class="fas fa-file-medical"></i></div>
+                    <h5 class="card-title" data-lang="feature1_title">Digital Health Records</h5>
+                    <p class="card-text" data-lang="feature1_desc">Securely store and access your entire medical history...</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 text-center p-3">
+                    <div class="feature-icon bg-success text-white mx-auto mb-3"><i class="fas fa-qrcode"></i></div>
+                    <h5 class="card-title" data-lang="feature2_title">QR Code Health Card</h5>
+                    <p class="card-text" data-lang="feature2_desc">A unique, scannable QR code provides doctors with instant access...</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 text-center p-3">
+                    <div class="feature-icon bg-info text-white mx-auto mb-3"><i class="fas fa-language"></i></div>
+                    <h5 class="card-title" data-lang="feature3_title">Multilingual Support</h5>
+                    <p class="card-text" data-lang="feature3_desc">Our platform is available in multiple languages...</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 text-center p-3">
+                    <div class="feature-icon bg-warning text-white mx-auto mb-3"><i class="fas fa-users-cog"></i></div>
+                    <h5 class="card-title" data-lang="feature4_title">Role-Based Dashboards</h5>
+                    <p class="card-text" data-lang="feature4_desc">Custom-tailored portals for Workers, Doctors, and Admins...</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 text-center p-3">
+                    <div class="feature-icon bg-danger text-white mx-auto mb-3"><i class="fas fa-chart-line"></i></div>
+                    <h5 class="card-title" data-lang="feature5_title">Health Analytics</h5>
+                    <p class="card-text" data-lang="feature5_desc">The admin dashboard provides valuable insights...</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 text-center p-3">
+                    <div class="feature-icon bg-secondary text-white mx-auto mb-3"><i class="fas fa-lock"></i></div>
+                    <h5 class="card-title" data-lang="feature6_title">Secure Access</h5>
+                    <p class="card-text" data-lang="feature6_desc">Your health data is protected with a secure login system...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5 mb-5">
+            <h2 class="display-5" data-lang="roadmap_header">Future Roadmap</h2>
+            <p class="lead" data-lang="roadmap_tagline">We are constantly innovating to improve healthcare access.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item fs-5 p-3"><i class="fas fa-video me-3 text-primary"></i><span data-lang="roadmap1">Telemedicine Integration</span></li>
+                    <li class="list-group-item fs-5 p-3"><i class="fas fa-brain me-3 text-primary"></i><span data-lang="roadmap2">AI-Powered Health Insights & Reminders</span></li>
+                    <li class="list-group-item fs-5 p-3"><i class="fas fa-wifi-slash me-3 text-primary"></i><span data-lang="roadmap3">Offline Access & Data Sync</span></li>
+                    <li class="list-group-item fs-5 p-3"><i class="fas fa-watch-fitness me-3 text-primary"></i><span data-lang="roadmap4">Wearable Device Integration</span></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p class="mb-0" data-lang="footer_text">&copy; 2025 Swasthya Sahayak. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/translate.js"></script>
+</body>
+</html>

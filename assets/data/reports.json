@@ -1,0 +1,20 @@
+[
+  {
+    "reportId": "REP501",
+    "workerId": "WKR12345",
+    "date": "2025-08-15",
+    "reportType": "Blood Test",
+    "title": "Complete Blood Count (CBC)",
+    "summary": "Hemoglobin levels are normal. Platelet count is slightly low.",
+    "fileUrl": "assets/reports/report_wkr12345_cbc.pdf"
+  },
+  {
+    "reportId": "REP502",
+    "workerId": "WKR67890",
+    "date": "2025-08-11",
+    "reportType": "X-Ray",
+    "title": "Chest X-Ray",
+    "summary": "No abnormalities detected in the chest region.",
+    "fileUrl": "assets/reports/report_wkr67890_xray.pdf"
+  }
+]

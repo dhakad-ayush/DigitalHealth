@@ -1,0 +1,20 @@
+[
+  {
+    "id": "DOC54321",
+    "name": "Dr. Priya Sharma",
+    "email": "doctor@test.com",
+    "password": "password123",
+    "role": "doctor",
+    "specialization": "General Physician",
+    "hospital": "City General Hospital, Kochi"
+  },
+  {
+    "id": "DOC98765",
+    "name": "Dr. Anbu Rajan",
+    "email": "dr.rajan@test.com",
+    "password": "password123",
+    "role": "doctor",
+    "specialization": "Cardiologist",
+    "hospital": "Metro Cardiac Center, Thrissur"
+  }
+]
