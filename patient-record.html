@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Record | Swasthya Sahayak</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .set{
+            height: 120px;
+            width: 110px;
+        }
+        .vital-card {
+            text-align: center;
+        }
+        .vital-card .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .vital-card .value {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        .vital-card .label {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        .nav-tabs .nav-link {
+            color: #495057;
+        }
+        .nav-tabs .nav-link.active {
+            color: #0d6efd;
+            border-color: #dee2e6 #dee2e6 #fff;
+        }
+    </style>
+</head>
+<body style="background-color: #f0f2f5;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">⛑️ Swasthya Sahayak</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="doctor.html"><i class="fas fa-tachometer-alt me-1"></i>Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedule.html"><i class="fas fa-calendar-alt me-1"></i>Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="patient-record.html#"><i class="fas fa-users me-1"></i>Patients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="messages.html"><i class="fas fa-envelope me-1"></i>Messages</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-circle me-1"></i> Dr. Sharma
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-user-cog me-2"></i>Profile Settings</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-question-circle me-2"></i>Help</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger" href="login.html"><i class="fas fa-sign-out-alt me-2"></i>Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-4">
+
+        <div class="card shadow-sm mb-4">
+            <div class="card-body p-4">
+                <div class="d-flex align-items-center">
+                    <img src="assets/img/profile.png" class="set rounded-circle me-4" alt="Patient Photo">
+                    <div>
+                        <h2 class="mb-0">Ramesh Kumar</h2>
+                        <p class="mb-1 text-muted">Patient ID: WKR12345</p>
+                        <span class="badge bg-secondary">Age: 42</span>
+                        <span class="badge bg-secondary">Gender: Male</span>
+                    </div>
+                    <div class="ms-auto">
+                        <a href="add-note.html" class="btn btn-primary"><i class="fas fa-notes-medical me-2"></i>Add New Note</a>
+                        <button class="btn btn-outline-secondary"><i class="fas fa-envelope me-2"></i>Message Patient</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="card vital-card shadow-sm h-100">
+                    <div class="card-body">
+                        <div class="icon text-danger"><i class="fas fa-heartbeat"></i></div>
+                        <div class="value">120/80</div>
+                        <div class="label">Blood Pressure (mmHg)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card vital-card shadow-sm h-100">
+                    <div class="card-body">
+                        <div class="icon text-primary"><i class="fas fa-tachometer-alt"></i></div>
+                        <div class="value">72</div>
+                        <div class="label">Heart Rate (BPM)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card vital-card shadow-sm h-100">
+                    <div class="card-body">
+                        <div class="icon text-success"><i class="fas fa-tint"></i></div>
+                        <div class="value">95</div>
+                        <div class="label">Glucose (mg/dL)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                 <div class="card vital-card shadow-sm h-100">
+                    <div class="card-body">
+                        <div class="icon text-warning"><i class="fas fa-weight"></i></div>
+                        <div class="value">24.5</div>
+                        <div class="label">BMI</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="history-tab" data-bs-toggle="tab" data-bs-target="#history" type="button" role="tab">Visit History</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="prescriptions-tab" data-bs-toggle="tab" data-bs-target="#prescriptions" type="button" role="tab">Prescriptions</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="reports-tab" data-bs-toggle="tab" data-bs-target="#reports" type="button" role="tab">Lab Reports</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="allergies-tab" data-bs-toggle="tab" data-bs-target="#allergies" type="button" role="tab">Allergies & Conditions</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="history" role="tabpanel">
+                        <h5 class="card-title">Recent Visits</h5>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr><th>Date</th><th>Reason for Visit</th><th>Doctor</th><th>Actions</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2025-09-21</td>
+                                    <td>Follow-up for seasonal flu</td>
+                                    <td>Dr. Sharma</td>
+                                    <td><a href="#" class="btn btn-sm btn-outline-primary">View Notes</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2025-08-15</td>
+                                    <td>Annual Check-up</td>
+                                    <td>Dr. Gupta</td>
+                                    <td><a href="#" class="btn btn-sm btn-outline-primary">View Notes</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2025-05-02</td>
+                                    <td>Complaint of joint pain</td>
+                                    <td>Dr. Sharma</td>
+                                    <td><a href="#" class="btn btn-sm btn-outline-primary">View Notes</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="prescriptions" role="tabpanel">
+                        <h5 class="card-title">Medication History</h5>
+                        <table class="table">
+                             <thead>
+                                <tr><th>Medication</th><th>Dosage</th><th>Frequency</th><th>Status</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Paracetamol</td>
+                                    <td>500 mg</td>
+                                    <td>As needed for fever</td>
+                                    <td><span class="badge bg-success">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Atorvastatin</td>
+                                    <td>20 mg</td>
+                                    <td>Once daily at night</td>
+                                    <td><span class="badge bg-success">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Amoxicillin</td>
+                                    <td>250 mg</td>
+                                    <td>Twice daily for 5 days</td>
+                                    <td><span class="badge bg-secondary">Finished</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="reports" role="tabpanel">
+                         <h5 class="card-title">Uploaded Reports</h5>
+                         <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div><i class="fas fa-file-pdf text-danger me-2"></i> Complete Blood Count (CBC) - 2025-08-15</div>
+                                <a href="#" class="btn btn-sm btn-outline-secondary">Download</a>
+                            </li>
+                             <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div><i class="fas fa-file-pdf text-danger me-2"></i> Chest X-Ray Report - 2025-04-20</div>
+                                <a href="#" class="btn btn-sm btn-outline-secondary">Download</a>
+                            </li>
+                         </ul>
+                    </div>
+                    <div class="tab-pane fade" id="allergies" role="tabpanel">
+                        <h5 class="card-title">Known Allergies</h5>
+                        <ul class="list-group mb-4">
+                            <li class="list-group-item">Penicillin - Causes rashes</li>
+                            <li class="list-group-item">Pollen - Causes seasonal rhinitis</li>
+                        </ul>
+                        <h5 class="card-title">Chronic Conditions</h5>
+                         <ul class="list-group">
+                            <li class="list-group-item">Hypertension (High Blood Pressure) - Managed with medication</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
