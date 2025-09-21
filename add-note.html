@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Note | Swasthya Sahayak</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: #f0f2f5;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">⛑️ Swasthya Sahayak</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="doctor-dashboard.html"><i class="fas fa-tachometer-alt me-1"></i>Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedule.html"><i class="fas fa-calendar-alt me-1"></i>Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="patient-record.html#"><i class="fas fa-users me-1"></i>Patients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="messages.html"><i class="fas fa-envelope me-1"></i>Messages</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-circle me-1"></i> Dr. Sharma
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-user-cog me-2"></i>Profile Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger" href="login.html"><i class="fas fa-sign-out-alt me-2"></i>Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="mb-0">Add Clinical Note</h2>
+            <a href="patient-record.html" class="btn btn-secondary"><i class="fas fa-arrow-left me-2"></i>Back to Patient Record</a>
+        </div>
+        
+        <div class="alert alert-info" role="alert">
+            Adding note for patient: <strong>Ramesh Kumar</strong> (ID: WKR12345)
+        </div>
+
+        <form>
+            <div class="card shadow-sm">
+                <div class="card-body p-4">
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-6">
+                            <label for="visitDate" class="form-label">Date of Visit</label>
+                            <input type="date" class="form-control" id="visitDate" value="2025-09-21">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="visitReason" class="form-label">Reason for Visit</label>
+                            <input type="text" class="form-control" id="visitReason" placeholder="e.g., Follow-up, seasonal flu">
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    <h5 class="mb-3">Vitals</h5>
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-3">
+                            <label for="bp" class="form-label">Blood Pressure</label>
+                            <input type="text" class="form-control" id="bp" placeholder="e.g., 120/80">
+                        </div>
+                        <div class="col-md-3">
+                             <label for="hr" class="form-label">Heart Rate (BPM)</label>
+                            <input type="number" class="form-control" id="hr" placeholder="e.g., 72">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="temp" class="form-label">Temperature (°C)</label>
+                            <input type="number" step="0.1" class="form-control" id="temp" placeholder="e.g., 37.5">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="weight" class="form-label">Weight (kg)</label>
+                            <input type="number" step="0.1" class="form-control" id="weight" placeholder="e.g., 75.5">
+                        </div>
+                    </div>
+
+                    <hr>
+                    <h5 class="mb-3">Doctor's Notes (SOAP Format)</h5>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="subjective" class="form-label">Subjective (Patient's Report)</label>
+                            <textarea class="form-control" id="subjective" rows="4" placeholder="Patient complains of..."></textarea>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="objective" class="form-label">Objective (Doctor's Observations)</label>
+                            <textarea class="form-control" id="objective" rows="4" placeholder="On examination..."></textarea>
+                        </div>
+                         <div class="col-md-6">
+                            <label for="assessment" class="form-label">Assessment (Diagnosis)</label>
+                            <textarea class="form-control" id="assessment" rows="4" placeholder="Diagnosis is..."></textarea>
+                        </div>
+                         <div class="col-md-6">
+                            <label for="plan" class="form-label">Plan (Treatment)</label>
+                            <textarea class="form-control" id="plan" rows="4" placeholder="Prescribe..., Advise..."></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-end">
+                    <a href="patient-record.html" class="btn btn-outline-secondary">Cancel</a>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-save me-2"></i>Save Note</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
