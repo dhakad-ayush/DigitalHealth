@@ -11,16 +11,51 @@
 </head>
 <body style="background-color: #f0f2f5;">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="doctor-dashboard.html">⛑️ Swasthya Sahayak</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="doctor-dashboard.html"><i class="fas fa-tachometer-alt me-1"></i>Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedule.html"><i class="fas fa-calendar-alt me-1"></i>Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-users me-1"></i>Patients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="messages.html"><i class="fas fa-envelope me-1"></i>Messages</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-circle me-1"></i> Dr. Sharma
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-user-cog me-2"></i>Profile Settings</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-question-circle me-2"></i>Help</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger" href="login.html"><i class="fas fa-sign-out-alt me-2"></i>Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <main class="container py-4">
-        <div class="dashboard-header-doc d-flex justify-content-between align-items-center">
+        <div class="dashboard-header-doc d-flex justify-content-between align-items-center mb-4 p-3 bg-white rounded shadow-sm">
             <div>
                 <h1 class="mb-0" id="doctorWelcomeMessage">Welcome, Dr. Sharma!</h1>
-                <p class="lead mb-0 opacity-75">You have 5 appointments scheduled for today.</p>
+                <p class="lead mb-0 text-muted">You have 5 appointments scheduled for today.</p>
             </div>
-            <a href="#" class="btn btn-light"><i class="fas fa-calendar-alt me-2"></i>View Schedule</a>
+            <a href="schedule.html" class="btn btn-primary"><i class="fas fa-calendar-alt me-2"></i>View Schedule</a>
         </div>
 
         <div class="row">
@@ -49,7 +84,7 @@
 
         <div class="card shadow-sm">
             <div class="card-header bg-white d-flex justify-content-between align-items-center">
-                <h5 class="mb-0">Patient Queue</h5>
+                <h5 class="mb-0"><i class="fas fa-users me-2"></i>Patient Queue</h5>
                 <div class="w-50">
                     <input type="text" class="form-control form-control-sm" placeholder="Search Patients...">
                 </div>
@@ -72,35 +107,35 @@
                                 <td>WKR12345</td>
                                 <td>10:00 AM</td>
                                 <td><span class="status-badge status-followup">Follow-up</span></td>
-                                <td><a href="#" class="btn btn-sm btn-outline-primary">View Record</a></td>
+                                <td><a href="patient-record.html" class="btn btn-sm btn-outline-primary">View Record</a></td>
                             </tr>
                             <tr>
                                 <td>Meena Devi</td>
                                 <td>WKR11223</td>
                                 <td>10:30 AM</td>
                                 <td><span class="status-badge status-new">New Patient</span></td>
-                                <td><a href="#" class="btn btn-sm btn-outline-primary">View Record</a></td>
+                                <td><a href="patient-record.html" class="btn btn-sm btn-outline-primary">View Record</a></td>
                             </tr>
                             <tr>
                                 <td>Suresh Singh</td>
                                 <td>WKR67890</td>
                                 <td>11:00 AM</td>
                                 <td><span class="status-badge status-followup">Follow-up</span></td>
-                                <td><a href="#" class="btn btn-sm btn-outline-primary">View Record</a></td>
+                                <td><a href="patient-record.html" class="btn btn-sm btn-outline-primary">View Record</a></td>
                             </tr>
                              <tr>
                                 <td>Sunita Kumari</td>
                                 <td>WKR77889</td>
                                 <td>11:30 AM</td>
                                 <td><span class="status-badge status-new">New Patient</span></td>
-                                <td><a href="#" class="btn btn-sm btn-outline-primary">View Record</a></td>
+                                <td><a href="patient-record.html" class="btn btn-sm btn-outline-primary">View Record</a></td>
                             </tr>
                             <tr>
                                 <td>Amit Patel</td>
                                 <td>WKR88990</td>
                                 <td>12:00 PM</td>
                                 <td><span class="status-badge status-followup">Follow-up</span></td>
-                                <td><a href="#" class="btn btn-sm btn-outline-primary">View Record</a></td>
+                                <td><a href="patient-record.html" class="btn btn-sm btn-outline-primary">View Record</a></td>
                             </tr>
                         </tbody>
                     </table>
