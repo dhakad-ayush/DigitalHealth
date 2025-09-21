@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Workers | Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="sidebar text-white">
+        <div class="text-center mb-4"><a class="navbar-brand fw-bold fs-4" href="admin.html">⛑️ Admin Panel</a></div>
+        <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="admin.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li class="nav-item"><a class="nav-link active" href="workers.html"><i class="fas fa-users"></i> Workers</a></li>
+            <li class="nav-item"><a class="nav-link" href="doctors.html"><i class="fas fa-user-md"></i> Doctors</a></li>
+            <li class="nav-item"><a class="nav-link" href="reports.html"><i class="fas fa-chart-bar"></i> Reports</a></li>
+            <li class="nav-item"><a class="nav-link" href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+        </ul>
+        <div class="position-absolute bottom-0 w-100 p-3"><a class="nav-link text-center" href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></div>
+    </div>
+
+    <div class="main-content">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>Manage Workers</h2>
+            <button class="btn btn-primary"><i class="fas fa-plus-circle me-2"></i>Add New Worker</button>
+        </div>
+
+        <div class="card shadow">
+            <div class="card-header py-3 d-flex justify-content-between align-items-center">
+                <h6 class="m-0 fw-bold text-primary">All Registered Workers</h6>
+                <div class="d-flex w-50"><input type="text" class="form-control form-control-sm" placeholder="Search by name, ID, or state..."></div>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr><th>Name</th><th>ID</th><th>Phone</th><th>Home State</th><th>Registered On</th><th>Status</th><th>Actions</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Ramesh Kumar</td><td>WKR12345</td><td>9876543210</td><td>West Bengal</td><td>2025-08-15</td><td><span class="badge bg-success">Verified</span></td><td><a href="#" class="btn btn-sm btn-info">View</a> <a href="#" class="btn btn-sm btn-danger">Suspend</a></td></tr>
+                            <tr><td>Suresh Singh</td><td>WKR67890</td><td>9876543211</td><td>Bihar</td><td>2025-08-14</td><td><span class="badge bg-success">Verified</span></td><td><a href="#" class="btn btn-sm btn-info">View</a> <a href="#" class="btn btn-sm btn-danger">Suspend</a></td></tr>
+                             <tr><td>Meena Devi</td><td>WKR11223</td><td>9876543212</td><td>Odisha</td><td>2025-08-12</td><td><span class="badge bg-warning text-dark">Pending</span></td><td><a href="#" class="btn btn-sm btn-info">View</a> <a href="#" class="btn btn-sm btn-success">Verify</a></td></tr>
+                              <tr><td>Amit Patel</td><td>WKR88990</td><td>9876543213</td><td>Gujarat</td><td>2025-08-10</td><td><span class="badge bg-danger">Suspended</span></td><td><a href="#" class="btn btn-sm btn-info">View</a> <a href="#" class="btn btn-sm btn-secondary">Unsuspend</a></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <nav class="mt-3"><ul class="pagination justify-content-end"><li class="page-item disabled"><a class="page-link" href="#">Previous</a></li><li class="page-item active"><a class="page-link" href="#">1</a></li><li class="page-item"><a class="page-link" href="#">2</a></li><li class="page-item"><a class="page-link" href="#">Next</a></li></ul></nav>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
