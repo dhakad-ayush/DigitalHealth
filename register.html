@@ -8,10 +8,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+    </style>
 </head>
-<body class="bg-light">
+<body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">⛑️ Swasthya Sahayak</a>
             <ul class="navbar-nav ms-auto">
@@ -31,18 +38,19 @@
         </div>
     </nav>
 
-    <main class="py-5">
+    <main class="registration-container py-5">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-7">
-                    <div class="card shadow-sm">
-                        <div class="card-header text-center bg-primary text-white p-3">
-                            <h4 class="mb-0" data-lang="create_account_header">Create Your Account</h4>
+                <div class="col-md-10 col-lg-8">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h3 class="mb-0" data-lang="create_account_header">⛑️ Create Your Account</h3>
+                            <p class="mb-0 opacity-75 small" data-lang="tagline">Join our network for better healthcare access.</p>
                         </div>
-                        <div class="card-body p-4">
+                        <div class="card-body p-4 p-md-5">
                             <form id="registrationForm">
-                                <div class="mb-3">
-                                    <label class="form-label" data-lang="i_am_a">I am a:</label>
+                                <div class="mb-4">
+                                    <label class="form-label fw-bold" data-lang="i_am_a">I am a:</label>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="role" id="roleWorker" value="worker" checked>
                                         <label class="form-check-label" for="roleWorker" data-lang="role_worker">Migrant Worker</label>
@@ -52,63 +60,92 @@
                                         <label class="form-check-label" for="roleDoctor" data-lang="doctor_provider">Doctor / Healthcare Provider</label>
                                     </div>
                                 </div>
-                                <hr>
+                                
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
                                         <label for="fullName" class="form-label" data-lang="full_name_label">Full Name</label>
-                                        <input type="text" class="form-control" id="fullName" required>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                            <input type="text" class="form-control" id="fullName" required>
+                                        </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <label for="phone" class="form-label" data-lang="phone_number_label">Phone Number</label>
-                                        <input type="tel" class="form-control" id="phone" required>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                            <input type="tel" class="form-control" id="phone" required>
+                                        </div>
                                     </div>
                                 </div>
+                                
                                 <div id="workerFields">
                                     <div class="row">
                                         <div class="col-md-6 mb-3">
                                             <label for="dob" class="form-label" data-lang="dob_label">Date of Birth</label>
-                                            <input type="date" class="form-control" id="dob">
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                                                <input type="date" class="form-control" id="dob">
+                                            </div>
                                         </div>
                                         <div class="col-md-6 mb-3">
                                             <label for="homeState" class="form-label" data-lang="home_state_label">Home State</label>
-                                            <input type="text" class="form-control" id="homeState">
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="fas fa-map-marker-alt"></i></span>
+                                                <input type="text" class="form-control" id="homeState">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                
                                 <div id="doctorFields" style="display: none;">
                                     <div class="row">
                                         <div class="col-md-6 mb-3">
                                             <label for="licenseNumber" class="form-label" data-lang="license_label">Medical License Number</label>
-                                            <input type="text" class="form-control" id="licenseNumber">
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="fas fa-id-card"></i></span>
+                                                <input type="text" class="form-control" id="licenseNumber">
+                                            </div>
                                         </div>
                                         <div class="col-md-6 mb-3">
                                             <label for="specialization" class="form-label" data-lang="specialization_label">Specialization</label>
-                                            <input type="text" class="form-control" id="specialization">
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="fas fa-stethoscope"></i></span>
+                                                <input type="text" class="form-control" id="specialization">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
                                         <label for="passwordReg" class="form-label" data-lang="password_label">Password</label>
-                                        <input type="password" class="form-control" id="passwordReg" required>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                            <input type="password" class="form-control" id="passwordReg" required>
+                                        </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <label for="confirmPassword" class="form-label" data-lang="confirm_password_label">Confirm Password</label>
-                                        <input type="password" class="form-control" id="confirmPassword" required>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                            <input type="password" class="form-control" id="confirmPassword" required>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-check mb-3">
+                                
+                                <div class="form-check my-4">
                                     <input type="checkbox" class="form-check-input" id="terms" required>
                                     <label class="form-check-label" for="terms">
                                         <span data-lang="agree_to">I agree to the</span> <a href="#" data-lang="terms_and_conditions">Terms and Conditions</a>
                                     </label>
                                 </div>
-                                <button type="submit" class="btn btn-primary w-100" data-lang="register_button">Register</button>
+                                
+                                <button type="submit" class="btn btn-primary w-100 btn-lg" data-lang="register_button">Register</button>
                             </form>
-                            <hr>
+                            <hr class="my-4">
                             <div class="text-center">
                                 <p class="mb-0">
-                                    <span data-lang="already_have_account">Already have an account?</span> <a href="login.html" data-lang="login_here">Login Here</a>
+                                    <span data-lang="already_have_account">Already have an account?</span> <a href="login.html" class="fw-bold" data-lang="login_here">Login Here</a>
                                 </p>
                             </div>
                         </div>
@@ -119,7 +156,7 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/register.js"></script>
+    <script src="js/register.js"></script> 
     <script src="js/translate.js"></script>
 </body>
 </html>
