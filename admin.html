@@ -17,157 +17,124 @@
         </div>
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a class="nav-link active" href="#" data-lang="sidebar_dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                <a class="nav-link active" href="admin.html" data-lang="sidebar_dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" data-lang="sidebar_workers"><i class="fas fa-users"></i> Workers</a>
+                <a class="nav-link" href="workers.html" data-lang="sidebar_workers"><i class="fas fa-users"></i> Workers</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" data-lang="sidebar_doctors"><i class="fas fa-user-md"></i> Doctors</a>
+                <a class="nav-link" href="doctors.html" data-lang="sidebar_doctors"><i class="fas fa-user-md"></i> Doctors</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" data-lang="sidebar_reports"><i class="fas fa-chart-bar"></i> Reports</a>
+                <a class="nav-link" href="reports.html" data-lang="sidebar_reports"><i class="fas fa-chart-bar"></i> Reports</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" data-lang="sidebar_settings"><i class="fas fa-cog"></i> Settings</a>
+                <a class="nav-link" href="settings.html" data-lang="sidebar_settings"><i class="fas fa-cog"></i> Settings</a>
             </li>
         </ul>
         <div class="position-absolute bottom-0 w-100 p-3">
-             <a class="nav-link text-center" href="#" onclick="handleLogout()" data-lang="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+             <a class="nav-link text-center" href="login.html" data-lang="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
         </div>
     </div>
 
     <div class="main-content">
         <div class="d-flex justify-content-between align-items-center mb-4">
             <h2 data-lang="dashboard_overview">Dashboard Overview</h2>
-            <div>
-                 </div>
         </div>
 
         <div class="row">
             <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-primary shadow h-100 py-2">
-                    <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col mr-2">
-                                <div class="text-xs fw-bold text-primary text-uppercase mb-1" data-lang="total_workers">Total Workers</div>
-                                <div class="h5 mb-0 fw-bold text-gray-800">1,250</div>
+                <a href="workers.html" class="text-decoration-none">
+                    <div class="card border-left-primary shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div class="text-xs fw-bold text-primary text-uppercase mb-1" data-lang="total_workers">Total Workers</div>
+                                    <div class="h5 mb-0 fw-bold text-gray-800">1,250</div>
+                                </div>
+                                <div class="col-auto"><i class="fas fa-users fa-2x text-gray-300"></i></div>
                             </div>
-                            <div class="col-auto"><i class="fas fa-users fa-2x text-gray-300"></i></div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-success shadow h-100 py-2">
-                    <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col mr-2">
-                                <div class="text-xs fw-bold text-success text-uppercase mb-1" data-lang="doctors_onboard">Doctors Onboard</div>
-                                <div class="h5 mb-0 fw-bold text-gray-800">75</div>
+                <a href="doctors.html" class="text-decoration-none">
+                    <div class="card border-left-success shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div class="text-xs fw-bold text-success text-uppercase mb-1" data-lang="doctors_onboard">Doctors Onboard</div>
+                                    <div class="h5 mb-0 fw-bold text-gray-800">75</div>
+                                </div>
+                                <div class="col-auto"><i class="fas fa-user-md fa-2x text-gray-300"></i></div>
                             </div>
-                            <div class="col-auto"><i class="fas fa-user-md fa-2x text-gray-300"></i></div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-info shadow h-100 py-2">
-                    <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col mr-2">
-                                <div class="text-xs fw-bold text-info text-uppercase mb-1" data-lang="stat_prescriptions">Prescriptions Issued</div>
-                                <div class="h5 mb-0 fw-bold text-gray-800">3,402</div>
+                <a href="prescription-issued.html" class="text-decoration-none">
+                    <div class="card border-left-info shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div class="text-xs fw-bold text-info text-uppercase mb-1" data-lang="stat_prescriptions">Prescriptions Issued</div>
+                                    <div class="h5 mb-0 fw-bold text-gray-800">3,402</div>
+                                </div>
+                                <div class="col-auto"><i class="fas fa-prescription-bottle-alt fa-2x text-gray-300"></i></div>
                             </div>
-                            <div class="col-auto"><i class="fas fa-prescription-bottle-alt fa-2x text-gray-300"></i></div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
              <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-warning shadow h-100 py-2">
-                    <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col mr-2">
-                                <div class="text-xs fw-bold text-warning text-uppercase mb-1" data-lang="stat_records">Total Health Records</div>
-                                <div class="h5 mb-0 fw-bold text-gray-800">15,890</div>
+                <a href="total-health-records.html" class="text-decoration-none">
+                    <div class="card border-left-warning shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div class="text-xs fw-bold text-warning text-uppercase mb-1" data-lang="stat_records">Total Health Records</div>
+                                    <div class="h5 mb-0 fw-bold text-gray-800">15,890</div>
+                                </div>
+                                <div class="col-auto"><i class="fas fa-folder-plus fa-2x text-gray-300"></i></div>
                             </div>
-                            <div class="col-auto"><i class="fas fa-folder-plus fa-2x text-gray-300"></i></div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-lg-8 mb-4">
-                <div class="card shadow">
-                    <div class="card-header py-3">
-                        <h6 class="m-0 fw-bold text-primary" data-lang="monthly_health_cases">Monthly Health Cases Trend</h6>
-                    </div>
-                    <div class="card-body"><canvas id="healthTrendChart" height="150"></canvas></div>
-                </div>
-            </div>
-            <div class="col-lg-4 mb-4">
-                <div class="card shadow">
-                    <div class="card-header py-3">
-                        <h6 class="m-0 fw-bold text-primary" data-lang="worker_distribution">Worker Distribution</h6>
-                    </div>
-                    <div class="card-body"><canvas id="workerDistributionChart" height="150"></canvas></div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row">
-             <div class="col-12 mb-4">
+             <div class="col-lg-8 mb-4">
                  <div class="card shadow">
-                    <div class="card-header py-3">
-                        <h6 class="m-0 fw-bold text-danger" data-lang="disease_by_type">Cases by Disease Type (Last 30 Days)</h6>
-                    </div>
-                    <div class="card-body"><canvas id="diseaseTypeChart" height="100"></canvas></div>
-                </div>
+                     <div class="card-header py-3">
+                         <h6 class="m-0 fw-bold text-primary" data-lang="monthly_health_cases">Monthly Health Cases Trend</h6>
+                     </div>
+                     <div class="card-body"><canvas id="healthTrendChart" height="150"></canvas></div>
+                 </div>
+             </div>
+             <div class="col-lg-4 mb-4">
+                 <div class="card shadow">
+                     <div class="card-header py-3">
+                         <h6 class="m-0 fw-bold text-primary" data-lang="worker_distribution">Worker Distribution</h6>
+                     </div>
+                     <div class="card-body"><canvas id="workerDistributionChart" height="150"></canvas></div>
+                 </div>
              </div>
          </div>
+         
+         <div class="row">
+              <div class="col-12 mb-4">
+                   <div class="card shadow">
+                       <div class="card-header py-3">
+                           <h6 class="m-0 fw-bold text-danger" data-lang="disease_by_type">Cases by Disease Type (Last 30 Days)</h6>
+                       </div>
+                       <div class="card-body"><canvas id="diseaseTypeChart" height="100"></canvas></div>
+                   </div>
+               </div>
+          </div>
 
-        <div class="row">
-            <div class="col-12 mb-4">
-                <div class="card shadow">
-                    <div class="card-header py-3 d-flex justify-content-between align-items-center">
-                        <h6 class="m-0 fw-bold text-primary">Registered Workers</h6>
-                        <div class="d-flex w-50">
-                            <select class="form-select form-select-sm me-2" data-lang="filter_by_state">
-                                <option selected>Filter by State</option>
-                                <option>West Bengal</option>
-                                <option>Bihar</option>
-                                <option>Odisha</option>
-                            </select>
-                            <input type="text" class="form-control form-control-sm" data-lang-placeholder="search_placeholder_generic">
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <table class="table table-striped table-hover">
-                                <thead>
-                                    <tr><th>Name</th><th>ID</th><th>Phone</th><th>Home State</th><th>Actions</th></tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td>Ramesh Kumar</td><td>WKR12345</td><td>9876543210</td><td>West Bengal</td><td><button class="btn btn-sm btn-success" data-lang="action_verify">Verify</button> <button class="btn btn-sm btn-danger" data-lang="action_suspend">Suspend</button></td></tr>
-                                    <tr><td>Suresh Singh</td><td>WKR67890</td><td>9876543211</td><td>Bihar</td><td><button class="btn btn-sm btn-success" data-lang="action_verify">Verify</button> <button class="btn btn-sm btn-danger" data-lang="action_suspend">Suspend</button></td></tr>
-                                    </tbody>
-                            </table>
-                        </div>
-                        <nav class="mt-3">
-                            <ul class="pagination justify-content-end">
-                                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
